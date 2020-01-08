@@ -1,0 +1,36 @@
+{
+  "name": "strophejs-plugin-http-file-upload",
+  "version": "1.0.1",
+  "description": "A strophe.js plugin for file upload using HTTP File Upload (XEP-0363)",
+  "main": "lib/strophe.http-file-upload.js",
+  "scripts": {
+    "build": "rollup src/strophe.http-file-upload.js -f umd -g strophe.js:window -e strophejs-plugin-rsm -o lib/strophe.http-file-upload.js -m",
+    "prepublish": "npm run --silent build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnishLushte07/strophejs-plugin-http-file-upload.git"
+  },
+  "keywords": [
+    "strophe.js",
+    "strophe",
+    "xmpp",
+    "plugin",
+    "http",
+    "fil upload",
+    "mod_http_upload"
+  ],
+  "author": "Anish Lushte",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnishLushte07/strophejs-plugin-http-file-upload/issues"
+  },
+  "homepage": "https://github.com/AnishLushte07/strophejs-plugin-http-file-upload#readme",
+  "devDependencies": {
+    "rollup": "^0.45.0"
+  },
+  "peerDependencies": {
+    "strophe.js": "^1.3.4"
+  }
+}

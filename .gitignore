@@ -1,0 +1,5 @@
+*~
+.*.sw?
+lib
+node_modules
+.idea
