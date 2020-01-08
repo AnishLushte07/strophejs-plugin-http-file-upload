@@ -1,6 +1,6 @@
 {
   "name": "strophejs-plugin-http-file-upload",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A strophe.js plugin for file upload using HTTP File Upload (XEP-0363)",
   "main": "lib/strophe.http-file-upload.js",
   "scripts": {

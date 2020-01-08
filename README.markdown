@@ -42,7 +42,7 @@ Generate get and put url for file:
         ... // other data
     }
     
-    function uplodaFile(file, url) {
+    function uploadFile(file, url) {
         var xhr = new XMLHttpRequest();
     
         xhr.onreadystatechange = function() {
@@ -60,7 +60,7 @@ Generate get and put url for file:
         file,
         function(data) {
             console.log("PUT URL: ", data.put, "GET URL: ", data.get);
-            uplodaFile(file, data.put);
+            uploadFile(file, data.put);
             return true;
         },
         function(err) {
@@ -68,4 +68,11 @@ Generate get and put url for file:
         }
     );
 
+## License
+
+strophejs-plugin-http-file-upload is copyright (c) 2019-present Anish Lushte <lushteanish@gmail.com> and
+the [contributors to Node-Minio](https://github.com/anishlushte07/strophejs-plugin-http-file-upload/graphs/contributors).
+
+strophejs-plugin-http-file-upload is free software, licensed under the MIT License. See the
+`LICENSE` file for more details.
 
