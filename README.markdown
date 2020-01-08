@@ -41,11 +41,26 @@ Generate get and put url for file:
         type: 'image/png',
         ... // other data
     }
+    
+    function uplodaFile(file, url) {
+        var xhr = new XMLHttpRequest();
+    
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4) {
+                console.log('File Uploaded Successfully.');
+            }
+        };
+    
+        xhr.open("PUT", url, true);
+        xhr.setRequestHeader('Content-Type', 'text/plain');
+        xhr.send(file);
+    }
 
     connection.httpUpload.getUrls(
         file,
         function(data) {
             console.log("PUT URL: ", data.put, "GET URL: ", data.get);
+            uplodaFile(file, data.put);
             return true;
         },
         function(err) {
